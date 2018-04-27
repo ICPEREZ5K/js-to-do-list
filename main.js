@@ -4,9 +4,9 @@ let taskCounter = 0;
 
 function hasTasks() {
 	if (taskCounter < 1) {
-		$('#oops').show();
+		M.toast({html: 'Great Job! You\'ve completed all your tasks.'})
 	} else if (taskCounter > 0) {
-		$('#oops').hide();
+		M.Toast.dismissAll();
 	}
 }
 
@@ -25,7 +25,7 @@ function myTasks(operation){
 $('#new_task').on("submit", function(){
 	
 	let x =
-			`<p class="vertical-align">
+			`<p>
       		<label>
         	<input type="checkbox" class="filled-in"/>
         	<span id="active-task" style='font-size: 1.8em; color: black'>${$('#icon_prefix2')[0].value}</span>
@@ -38,3 +38,10 @@ $('#new_task').on("submit", function(){
 	$('#icon_prefix2')[0].value = "";
 })
 
+// ONLOAD EVENTS
+
+window.setTimeout(function(){
+	if (taskCounter == 0){
+		M.toast({html: 'You can add a new task by using the text field above.', displayLength: 60000});
+	}
+}, 5000);

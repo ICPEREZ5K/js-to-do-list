@@ -2,6 +2,12 @@
 	height: 50px;
 }
 
+#toast-container {
+	top: auto !important;
+	right: auto !important;
+	bottom:2%;
+}
+
 #icon_prefix2{
 	font-size: 1.2em;
 }
