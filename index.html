@@ -11,31 +11,33 @@
 </head>
 
 <body>
-	<div class="container" id="main-card">
-		<div class="card-panel orange lighten-4">
-			<div id="oops" class="center-align">	
+	<div class="container">
+		<div id="main-card" class="card-panel purple darken-4">
+
 				<div class="row">
-					<div class="col s8 push-s2 blue-text text-lighten-1">
-						<h5>You have nothing to do.. Netflix time</h5>
-					</div>
+					<form id="tasklist-name" class="col s12">
+						<div class="center-align">
+						<input id="icon_prefix1" class="grey-text text-lighten2" autocomplete="off" type="text">
+						<label for="icon_prefix1">Title</label>
+						</div>
+					</form>
+			
+				</div>
+
+		<div class="card-panel grey lighten-2">
+			<div class="center-align">
+				<div id="task-list" class="row">
+				
 				</div>
 			</div>
-			
-			
-			<div class="col l10 offset-l1 s12 offset-s0 center-align">
-				<div class="row">
-					<div id="task-list">
-						
-					</div>
-				</div>
-			</div>
+		</div>
 			
 			<div class="row">
 				<form id="new_task" class="col s12">
 					<div class="row">
 						<div class="input-field col s12">
 							<i class="material-icons prefix">mode_edit</i>
-							<input id="icon_prefix2" autocomplete="off" type="text">
+							<input id="icon_prefix2" class="grey-text text-lighten2" autocomplete="off" type="text">
 							<label for="icon_prefix2">Add task</label>
 						</div>
 					</div>
