@@ -25,10 +25,10 @@ function myTasks(operation){
 $('#new_task').on("submit", function(){
 	
 	let x =
-			`<p>
+			`<p class="vertical-align">
       		<label>
         	<input type="checkbox" class="filled-in"/>
-        	<span class="vertical-align" style='font-size: 1.8em; color: black'>${$('#icon_prefix2')[0].value}</span>
+        	<span id="active-task" style='font-size: 1.8em; color: black'>${$('#icon_prefix2')[0].value}</span>
       		</label>
     		</p>`;
 	
